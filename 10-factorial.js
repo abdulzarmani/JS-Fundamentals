@@ -6,4 +6,8 @@ function factorial(n) {
 
 const num = parseInt(process.argv[2]);
 
-console.log(factorial(num) || 1);
+if (isNaN(num)) {
+  console.log(1);
+} else {
+  console.log(factorial(num));
+}
